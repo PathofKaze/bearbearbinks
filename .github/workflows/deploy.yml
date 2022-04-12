@@ -3,9 +3,8 @@ name: Deploy to Heroku
 
 on:
   push:
-    tags:
-      -'v*'
-      -'v*-alpha'
+    branches:
+      - production
       
 jobs:
   deploy_to_heroku:
